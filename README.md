@@ -9,7 +9,8 @@ A significant group of machine learning algorithms known as recommender systems 
 Project Flow-
 I have used a Kaggle dataset OF TMDB which is a movie rating website- https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv
 
-After reading the data from dataset I have performed data preprocessing. Dropping unwanted columns since I am making a content based recommender system, I am only keeping those features which will help me create a TAG to make recommendations. I have also done Stemming using nltk library. I have done text vectorization (by also removing stop words) using Bag of words technique. This bag of words will be used to create matrix factorization. I have every movie in a vector form on a 5000D Space. It is a Sparse matrix Python i.e. most of the elements of the matrix have 0 value, then it is called a sparse matrix. The recommendation is also performed with the help of Cosine Similarity.
+I preprocessed the data after reading it from the dataset. I am removing unnecessary columns and just preserving features that will help me build a TAG to make suggestions because I am building a content-based recommender system. I have also used the nltk library to perform stemming. Using the Bag of Words technique, I vectorized text while also deleting stop words. The matrix factorization will be produced using this collection of words. On a 5000D Space, I have every movie in vector form. When the majority of a matrix's members have a value of 0, it is said to be a sparse matrix in Python. Cosine Similarity is used to carry out the suggestion process as well.
+
 ![image](https://user-images.githubusercontent.com/87760177/212707336-8041bfc5-19bc-4ce1-aed5-c7c0304fb6f7.png)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
